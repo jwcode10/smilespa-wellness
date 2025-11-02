@@ -42,7 +42,9 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full sticky top-0 z-50">
+    <header className={`w-full sticky top-0 z-50 bg-white transition-shadow duration-300 ${
+      isScrolled ? "shadow-md" : ""
+    }`}>
       <nav
         className="mx-auto max-w-[1200px] px-6 py-4 relative"
         aria-label="Primary"
