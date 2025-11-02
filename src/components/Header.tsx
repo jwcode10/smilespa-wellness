@@ -42,15 +42,15 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full sticky top-0 z-50">
+    <header className={`w-full sticky top-0 z-50 transition-all duration-700 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
       <nav
-        className="mx-auto max-w-[1200px] px-6 py-4 relative"
+        className="mx-auto max-w-[1200px] px-6 py-1 relative"
         aria-label="Primary"
       >
         {/* Desktop Layout - lg and xl */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4">
+        <div className="hidden lg:grid lg:grid-cols-[0.7fr_auto_0.7fr] lg:items-center lg:gap-4">
           {/* Left nav links - constrained to left side, adaptive sizing */}
-          <ul className="flex items-center justify-start gap-4 xl:gap-6 text-[15px] xl:text-[17px] text-black overflow-hidden">
+          <ul className="flex items-center justify-start gap-2 text-xs overflow-hidden uppercase tracking-wide">
             {[
               ["Home", "/"],
               ["Products", "/products"],
@@ -61,7 +61,7 @@ export default function Header() {
               <li key={label} className="flex-shrink-0">
                 <a
                   href={href}
-                  className="px-2 py-1 text-black hover:text-gray-900 focus-visible:text-gray-900 focus:outline-none transition-colors whitespace-nowrap"
+                  className={`px-2 transition-colors duration-700 whitespace-nowrap font-sans ${isScrolled ? 'text-black hover:text-gray-900' : 'text-white hover:text-gray-200'}`}
                 >
                   {label}
                 </a>
@@ -70,11 +70,11 @@ export default function Header() {
           </ul>
 
           {/* Center logo - forced to stay in absolute center */}
-          <a href="/" className="select-none flex justify-center" aria-label="Home">
+          <a href="/" className="select-none flex justify-center items-start -mt-1" aria-label="Home">
             <img
               src="/pics/smile-spa-wellness-logo.png"
               alt="Smile Spa Wellness logo"
-              className="h-12 w-auto brightness-0"
+              className={`h-20 w-auto transition-all duration-700 ${isScrolled ? 'brightness-0' : 'brightness-0 invert'}`}
             />
           </a>
 
@@ -82,11 +82,19 @@ export default function Header() {
           <div className="flex items-center justify-end gap-4">
             <a
               href="/contact"
-              className="group inline-flex items-center gap-2 rounded-full px-5 py-2 text-[17px] font-medium border border-black text-black hover:bg-black hover:text-white transition-all focus-visible:ring-2 focus-visible:ring-gray-300 focus:outline-none"
+              className={`group inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-700 focus-visible:ring-2 focus-visible:ring-gray-300 focus:outline-none ${
+                isScrolled 
+                  ? 'border border-black text-black hover:bg-black hover:text-white' 
+                  : 'border border-white text-white hover:bg-white hover:text-black'
+              }`}
             >
               <span>Get in touch</span>
               <span
-                className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-black group-hover:border-white"
+                className={`inline-flex h-4 w-4 items-center justify-center rounded-full transition-colors duration-700 ${
+                  isScrolled 
+                    ? 'border border-black group-hover:border-white' 
+                    : 'border border-white group-hover:border-black'
+                }`}
                 aria-hidden
               >
                 →
@@ -102,7 +110,7 @@ export default function Header() {
             <img
               src="/pics/smile-spa-wellness-logo.png"
               alt="Smile Spa Wellness logo"
-              className="h-12 w-auto brightness-0"
+              className={`h-12 w-auto transition-all duration-700 ${isScrolled ? 'brightness-0' : 'brightness-0 invert'}`}
             />
           </a>
 
@@ -113,12 +121,16 @@ export default function Header() {
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsMenuOpen(v => !v)}
-            className="h-11 w-11 inline-flex items-center justify-center rounded-full border border-black text-black hover:border-gray-600 focus-visible:ring-gray-300 focus-visible:outline-none focus-visible:ring-2 transition-colors"
+            className={`h-11 w-11 inline-flex items-center justify-center rounded-full transition-colors duration-700 focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-gray-300 ${
+              isScrolled 
+                ? 'border border-black text-black hover:border-gray-600' 
+                : 'border border-white text-white hover:border-gray-300'
+            }`}
           >
             <span className="relative block h-4 w-5" aria-hidden>
-              <span className={`${isMenuOpen ? "translate-y-2 rotate-45" : ""} absolute left-0 top-0 h-0.5 w-5 bg-black transition-transform`} />
-              <span className={`${isMenuOpen ? "opacity-0" : "opacity-100"} absolute left-0 top-1.5 h-0.5 w-5 bg-black transition-opacity`} />
-              <span className={`${isMenuOpen ? "-translate-y-2 -rotate-45" : ""} absolute left-0 top-3 h-0.5 w-5 bg-black transition-transform`} />
+              <span className={`${isMenuOpen ? "translate-y-2 rotate-45" : ""} absolute left-0 top-0 h-0.5 w-5 transition-transform ${isScrolled ? 'bg-black' : 'bg-white'}`} />
+              <span className={`${isMenuOpen ? "opacity-0" : "opacity-100"} absolute left-0 top-1.5 h-0.5 w-5 transition-opacity ${isScrolled ? 'bg-black' : 'bg-white'}`} />
+              <span className={`${isMenuOpen ? "-translate-y-2 -rotate-45" : ""} absolute left-0 top-3 h-0.5 w-5 transition-transform ${isScrolled ? 'bg-black' : 'bg-white'}`} />
             </span>
           </button>
         </div>
@@ -127,18 +139,22 @@ export default function Header() {
       {/* Full-screen dark dropdown menu */}
       <div
         id="mobile-menu"
-        className={`fixed inset-0 z-[100] bg-[#0A0A10] text-white lg:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[100] bg-[#9CBECE]/50 backdrop-blur-xl text-white lg:hidden transition-all duration-700 ${
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={(e) => {
           if (e.target === e.currentTarget) setIsMenuOpen(false);
         }}
       >
-        <div className="h-full w-full flex flex-col px-6 pt-8 pb-12">
+        <div className="h-full w-full flex flex-col px-6 pt-8 pb-12 overflow-y-auto">
           {/* Header with logo and close button */}
           <div className="flex items-center justify-between mb-16">
-            <a href="/" className="text-white text-xl font-normal select-none" aria-label="Home" onClick={() => setIsMenuOpen(false)}>
-              smile spa wellness
+            <a href="/" className="select-none" aria-label="Home" onClick={() => setIsMenuOpen(false)}>
+              <img
+                src="/pics/smile-spa-wellness-logo.png"
+                alt="Smile Spa Wellness logo"
+                className="h-20 w-auto brightness-0 invert"
+              />
             </a>
             <button
               type="button"
