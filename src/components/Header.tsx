@@ -44,65 +44,69 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 z-50">
       <nav
-        className="mx-auto max-w-[1200px] px-6 py-4 flex items-center justify-between"
+        className="mx-auto max-w-[1200px] px-6 py-4 relative"
         aria-label="Primary"
       >
-        {/* Left nav links (desktop - lg and xl only) */}
-        <ul className="hidden lg:flex items-center gap-10 text-[17px] text-black">
-          {[
-            ["Home", "/"],
-            ["Products", "/products"],
-            ["Pricing", "/#pricing"],
-            ["Certificates", "/certificates"],
-            ["Privacy", "/privacy"],
-          ].map(([label, href]) => (
-            <li key={label}>
-              <a
-                href={href}
-                className="px-2 py-1 text-black hover:text-gray-900 focus-visible:text-gray-900 focus:outline-none transition-colors"
-              >
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {/* Desktop Layout - lg and xl */}
+        <div className="hidden lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4">
+          {/* Left nav links - constrained to left side, adaptive sizing */}
+          <ul className="flex items-center justify-start gap-4 xl:gap-6 text-[15px] xl:text-[17px] text-black overflow-hidden">
+            {[
+              ["Home", "/"],
+              ["Products", "/products"],
+              ["Pricing", "/#pricing"],
+              ["Certificates", "/certificates"],
+              ["Privacy", "/privacy"],
+            ].map(([label, href]) => (
+              <li key={label} className="flex-shrink-0">
+                <a
+                  href={href}
+                  className="px-2 py-1 text-black hover:text-gray-900 focus-visible:text-gray-900 focus:outline-none transition-colors whitespace-nowrap"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* Center logo (desktop - lg and xl only) */}
-        <a href="/" className="hidden lg:block select-none" aria-label="Home">
-          <img
-            src="/pics/smile-spa-wellness-logo.png"
-            alt="Smile Spa Wellness logo"
-            className="h-12 w-auto brightness-0"
-          />
-        </a>
-
-        {/* Logo on mobile/tablet */}
-        <a href="/" className="lg:hidden select-none" aria-label="Home">
-          <img
-            src="/pics/smile-spa-wellness-logo.png"
-            alt="Smile Spa Wellness logo"
-            className="h-12 w-auto brightness-0"
-          />
-        </a>
-
-        {/* Right controls - Get in touch (desktop - lg and xl only) */}
-        <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="/contact"
-            className="group inline-flex items-center gap-2 rounded-full px-5 py-2 text-[17px] font-medium border border-black text-black hover:bg-black hover:text-white transition-all focus-visible:ring-2 focus-visible:ring-gray-300 focus:outline-none"
-          >
-            <span>Get in touch</span>
-            <span
-              className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-black group-hover:border-white"
-              aria-hidden
-            >
-              →
-            </span>
+          {/* Center logo - forced to stay in absolute center */}
+          <a href="/" className="select-none flex justify-center" aria-label="Home">
+            <img
+              src="/pics/smile-spa-wellness-logo.png"
+              alt="Smile Spa Wellness logo"
+              className="h-12 w-auto brightness-0"
+            />
           </a>
+
+          {/* Right controls - Get in touch */}
+          <div className="flex items-center justify-end gap-4">
+            <a
+              href="/contact"
+              className="group inline-flex items-center gap-2 rounded-full px-5 py-2 text-[17px] font-medium border border-black text-black hover:bg-black hover:text-white transition-all focus-visible:ring-2 focus-visible:ring-gray-300 focus:outline-none"
+            >
+              <span>Get in touch</span>
+              <span
+                className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-black group-hover:border-white"
+                aria-hidden
+              >
+                →
+              </span>
+            </a>
+          </div>
         </div>
 
-        {/* Hamburger (all breakpoints except lg and xl) */}
-        <div className="lg:hidden">
+        {/* Mobile/Tablet Layout */}
+        <div className="lg:hidden flex items-center justify-between">
+          {/* Logo on mobile/tablet */}
+          <a href="/" className="select-none" aria-label="Home">
+            <img
+              src="/pics/smile-spa-wellness-logo.png"
+              alt="Smile Spa Wellness logo"
+              className="h-12 w-auto brightness-0"
+            />
+          </a>
+
+          {/* Hamburger (all breakpoints except lg and xl) */}
           <button
             type="button"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
