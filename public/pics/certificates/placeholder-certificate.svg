@@ -1,0 +1,34 @@
+<!-- This is a placeholder SVG certificate template -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Border decoration -->
+  <rect x="20" y="20" width="360" height="260" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="60" fill="#dc3545"/>
+  <text x="200" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">CERTIFICATE OF COMPLETION</text>
+  
+  <!-- Main content -->
+  <text x="200" y="100" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="16" font-weight="bold">This certifies that</text>
+  <text x="200" y="130" text-anchor="middle" fill="#dc3545" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Dr. [Name]</text>
+  <text x="200" y="160" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="14">has successfully completed</text>
+  <text x="200" y="180" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Peptide Therapy Certification</text>
+  
+  <!-- Footer -->
+  <text x="200" y="220" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">American Academy of Anti-Aging Medicine</text>
+  <text x="200" y="240" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">2023</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="100" r="3" fill="#dc3545"/>
+  <circle cx="320" cy="100" r="3" fill="#dc3545"/>
+  <circle cx="80" cy="200" r="3" fill="#dc3545"/>
+  <circle cx="320" cy="200" r="3" fill="#dc3545"/>
+</svg>
+
+
+
+
+
+

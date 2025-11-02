@@ -1,0 +1,259 @@
+{
+  "site": {
+    "brand": {
+      "short": "Smile Spa",
+      "name": "The Smile Spa Wellness",
+      "tm": "™",
+      "ariaHome": "Smile Spa Wellness home"
+    },
+    "nav": [
+      { "href": "/#about", "label": "About" },
+      { "href": "/#products", "label": "Peptides" },
+      { "href": "/#benefits", "label": "Benefits" },
+      { "href": "/#faq", "label": "FAQ" },
+      { "href": "/#contact", "label": "Contact" },
+      { "href": "/landing-2", "label": "Landing 2" }
+    ],
+    "auth": {
+      "login": "Client Login",
+      "join": "Join Now",
+      "joinCta": "Book a Consultation",
+      "startFree": "Claim Free Sample"
+    }
+  },
+  "hero": {
+    "eyebrow": "Unlocking Human Potential",
+    "title": "Bioactive Precision Peptides",
+    "titleEmphasisBefore": "Discover ",
+    "titleEmphasis": "Peptides",
+    "titleEmphasisAfter": " for Wellness",
+    "description": "Derived from nature. Backed by human clinicals. Designed to help you lose fat, gain energy, and recover faster.",
+    "imageAlt": "Refreshing glass of peptide drink with fruit garnish"
+  },
+  "stats": {
+    "items": [
+      { "value": "100", "suffix": "%", "label": "Weight loss from fat" },
+      { "value": "65", "suffix": "%", "label": "Belly fat reduction" },
+      { "value": "54", "suffix": "%", "label": "Increase in muscle performance" },
+      { "value": "103", "suffix": "%", "label": "Faster recovery" }
+    ],
+    "aside": {
+      "description": "Every complimentary consult includes a guided introduction to our peptide blends. We’ll help match you to the right formula based on your health goals.",
+      "cta": "Book Your Free Consult",
+      "ctaHref": "/consultation"
+    }
+  },
+  "services": {
+    "title": "Our Peptide Blends",
+    "subtitle": "Targeted, delicious formulations that support weight loss, energy, recovery, and hydration.",
+    "cta": "Explore All Blends",
+    "cards": [
+      { "title": "FIT Citrus Refresher", "description": "Boost energy & endurance, recover muscles, and stay lean. Key vitamins D, B6 & B12." },
+      { "title": "ENERGIZE Blue Raspberry", "description": "Clean, natural energy powered by fatigue-fighter peptides. Zero added sugar." },
+      { "title": "HYDRATE Tropical Refresher", "description": "Replenish minerals and electrolytes. Zero added sugar. Refreshing tropical taste." }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our Philosophy",
+    "title": "Wellness, Backed by Science",
+    "more": "Learn More"
+  },
+  "reviews": {
+    "titleLine1": "What our clients say",
+    "titleLine2": "about Smile Spa Wellness",
+    "items": [
+      { "name": "Laura S.", "handle": "@brmom", "quote": "The peptides gave me energy without the crash. I feel clearer and more focused every day.", "date": "06.15.2025" },
+      { "name": "James R.", "handle": "@fitjourney", "quote": "Hydrate kept me going during workouts and I’ve noticed better recovery too.", "date": "07.02.2025" }
+    ]
+  },
+  "appPromo": {
+    "title": "Your Daily Wellness Routine",
+    "titlePrefix": "Smile Spa Wellness: ",
+    "titleEmphasis": "your",
+    "titleSuffix": " partner in health.",
+    "description": "Simple peptide blends you can drink daily to support energy, mood, hydration, and performance.",
+    "appStoreAria": "Download Smile Spa Wellness App",
+    "googlePlayAria": "Get Smile Spa Wellness App",
+    "imageAlt": "Mobile preview of peptide wellness tracker"
+  },
+  "pricing": {
+    "section": {
+      "title": "Choose Your Blend",
+      "subtitle": "Affordable peptide solutions with no hidden fees. Try before you commit.",
+      "highlightLabel": "Best Value",
+      "plans": [
+        { "name": "Single Pack", "price": "$29", "features": ["One box of your chosen peptide", "Complimentary consult"], "cta": "Buy Now", "highlight": false },
+        { "name": "Wellness Bundle", "price": "$79", "features": ["Choose 3 blends", "Complimentary consult", "Exclusive tips"], "cta": "Bundle & Save", "highlight": true },
+        { "name": "Monthly Subscription", "price": "$139", "features": ["Automatic delivery", "Mix & match flavors", "Priority support"], "cta": "Subscribe", "highlight": false }
+      ]
+    },
+    "mvp1": {
+      "title": "Memberships that fit your flow",
+      "subtitle": "Flexible plans for getting started, leveling up, or going all‑in with personal coaching.",
+      "compare": "Compare plans",
+      "plans": [
+        { "name": "Starter", "price": "$0", "features": ["2 classes / week", "Community access", "Basics library"], "cta": "Start for free", "highlight": false },
+        { "name": "Growth", "price": "$29", "features": ["Unlimited classes", "All categories", "Weekly challenges"], "cta": "Choose Growth", "highlight": true },
+        { "name": "Coach+", "price": "$99", "features": ["1:1 coach messages", "Form checks", "Priority support"], "cta": "Go Coach+", "highlight": false }
+      ],
+      "badges": { "highlightLabel": "Popular", "bestValue": "Best value" }
+    },
+    "mvp2": {
+      "title": "Everything in one place",
+      "subtitle": "Choose a plan and unlock focused programs, progress tracking, and coach support.",
+      "tiers": [
+        { "name": "Basic", "price": "$14", "perks": ["Community forums", "Beginner programs", "Class reminders"] },
+        { "name": "Plus", "price": "$39", "perks": ["All Basic features", "All class categories", "Downloadable guides"] },
+        { "name": "Pro", "price": "$129", "perks": ["Everything in Plus", "1:1 monthly call", "Priority booking"] }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Get in touch.",
+    "subtitle": "Questions about peptides or how to start? Send a message and our team will reply within one business day.",
+    "form": {
+      "nameLabel": "Full name",
+      "namePlaceholder": "Jane Smith",
+      "emailLabel": "Email",
+      "emailPlaceholder": "jane@domain.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help?",
+      "submit": "Send",
+      "success": "Thanks! We'll be in touch.",
+      "subscribeSuccess": "Subscribed. Welcome to Smile Spa Wellness!"
+    }
+  },
+  "faq": {
+    "titleBefore": "Frequently Asked ",
+    "titleEmphasis": "Questions",
+    "subtitle": "Everything you need to know about peptides and Smile Spa Wellness.",
+    "items": [
+      { "q": "What are bioactive precision peptides?", "a": "Natural, cell-signaling peptides designed to improve energy, fat loss, hydration, and recovery." },
+      { "q": "How are these peptides taken?", "a": "They are ingested as delicious drink mixes, not injected." },
+      { "q": "Are the peptides safe?", "a": "Yes, all blends are tested on humans, not animals, and are backed by clinical studies." },
+      { "q": "Do they contain sugar?", "a": "No. Our peptide blends are naturally flavored with zero added sugar." },
+      { "q": "Can I try a sample?", "a": "Yes! Visit The Smile Spa to try a complimentary sample of FIT, ENERGIZE, or HYDRATE." }
+    ],
+    "mvp": {
+      "heading": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about MVPBlocks and how to use our components to build your next project quickly.",
+      "items": [
+        { "id": "1", "title": "What makes MVPBlocks different?", "content": "MVPBlocks is a fully open-source, developer-first component library built using Next.js and TailwindCSS, designed to help you launch your MVPs in record time. No bloated packages, no unnecessary installs—just clean, copyable code to plug right into your next big thing." },
+        { "id": "2", "title": "How can I customize the components?", "content": "All components are built with Tailwind CSS, making them highly customizable. Simply modify the class names or use our theme variables to match your brand. Components also support both light and dark modes out of the box." },
+        { "id": "3", "title": "Are MVPBlocks components responsive?", "content": "Absolutely! All components are designed to be fully responsive and work beautifully on all devices, from mobile phones to large desktop screens. We've carefully crafted each component to provide an optimal experience regardless of screen size." },
+        { "id": "4", "title": "Can I use MVPBlocks for commercial projects?", "content": "Yes, all MVPBlocks components are free to use for both personal and commercial projects. No attribution required—just build and launch your MVP faster than ever before." },
+        { "id": "5", "title": "How do I get started with MVPBlocks?", "content": "Simply browse our component library, find the components you need, and copy the code into your project. It's that easy! Our documentation provides clear instructions for installation and usage." }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Monthly wellness tips, exclusive offers, and complimentary sample invites.",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "you@example.com",
+    "columns": {
+      "services": {
+        "title": "Our Blends",
+        "links": [
+          { "label": "FIT Citrus Refresher", "href": "/#products" },
+          { "label": "ENERGIZE Blue Raspberry", "href": "/#products" },
+          { "label": "HYDRATE Tropical Refresher", "href": "/#products" }
+        ]
+      },
+      "company": {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "/#about" },
+          { "label": "Client Stories", "href": "/#reviews" },
+          { "label": "Pricing", "href": "/#plans" }
+        ]
+      },
+      "support": {
+        "title": "Support",
+        "links": [
+          { "label": "Contact", "href": "/#contact" },
+          { "label": "FAQ", "href": "/#faq" },
+          { "label": "Accessibility", "href": "#" }
+        ]
+      }
+    },
+    "legal": [
+      { "label": "Terms", "href": "#" },
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Cookies", "href": "#" }
+    ],
+    "copyrightPrefix": "© ",
+    "copyrightSuffix": " The Smile Spa Wellness. All rights reserved."
+  },
+  "pricingPage": {
+    "hero": {
+      "line1": "Choose Your",
+      "line2": "Membership Plan",
+      "subtitle": "Comprehensive wellness packages designed to help you achieve your health and fitness goals"
+    },
+    "cards": [
+      {
+        "badge": "Strength",
+        "category": "Performance",
+        "title": "Performance Muscle Strengthening & Recovery Package",
+        "description": "Boost performance and enhance recovery with our comprehensive muscle strengthening program. Includes annual nurse consultations, monthly recovery medications, body composition tracking, and personalized training plans.",
+        "price": "$249",
+        "period": "/month",
+        "note": "Billed monthly • Active",
+        "primaryCta": "Start Membership",
+        "secondaryCta": "Learn More",
+        "features": [
+          ["Nurse Consultations", "Annual visits with nurse practitioner"],
+          ["Recovery Support", "Monthly muscle recovery medications"],
+          ["Body Composition", "Regular body scans and tracking"],
+          ["Training Plans", "Personalized workout programs"]
+        ]
+      },
+      {
+        "mostPopular": "Most Popular",
+        "category": "Transformation",
+        "title": "Transformation Weight Loss Package",
+        "description": "Metabolic reset & Body composition – Our comprehensive weight loss program includes annual nurse practitioner consultations, monthly GLP1 medications, body scans, 2 week Lingo CMG monitoring (continuous glucose monitor), and personalized training & food plans to help employees achieve their goals.",
+        "price": "$399",
+        "period": "/month",
+        "note": "Billed monthly • Active",
+        "primaryCta": "Start Transformation",
+        "secondaryCta": "Book Consultation",
+        "features": [
+          ["Nurse Consultations", "Annual visits with nurse practitioner"],
+          ["GLP1 Medications", "Monthly weight management medications"],
+          ["Body Scans", "Regular body composition tracking"],
+          ["Lingo CGM", "2-week continuous glucose monitoring"],
+          ["Personal Plans", "Customized training & nutrition programs"]
+        ]
+      },
+      {
+        "badge": "Wellness",
+        "category": "Longevity",
+        "title": "Wellness Package",
+        "description": "Rebuild/Repair/Revitalize – Invest in long-term health and vitality with our wellness and longevity program. Included are bi-annual nurse visits, monthly peptide medications, a training and food plan, and regular body scans that promote holistic well-being.",
+        "price": "$299",
+        "period": "/month",
+        "note": "Billed monthly • Active",
+        "primaryCta": "Start Wellness",
+        "secondaryCta": "Learn More",
+        "features": [
+          ["Nurse Visits", "Bi-annual consultations"],
+          ["Peptide Medications", "Monthly wellness peptides"],
+          ["Training & Food Plan", "Personalized wellness programs"],
+          ["Body Scans", "Regular health tracking"],
+          ["Holistic Support", "Comprehensive well-being approach"]
+        ]
+      }
+    ],
+    "trust": {
+      "items": [
+        { "label": "SSL Secured" },
+        { "label": "24/7 Support" },
+        { "label": "Cancel Anytime" }
+      ],
+      "caption": "Trusted wellness programs backed by certified practitioners"
+    }
+  }
+}
+
+
