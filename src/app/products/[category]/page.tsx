@@ -144,9 +144,12 @@ const CategoryPage: React.FC = () => {
                     >
                       View Product
                     </a>
-                    <button className="px-6 py-3 border-2 border-neutral-300 rounded-full font-semibold text-neutral-700 hover:border-neutral-400 transition-colors">
+                    <a
+                      href="https://www.joinblvd.com/b/smilespawellness/widget#/visit-type"
+                      className="px-6 py-3 border-2 border-neutral-300 rounded-full font-semibold text-neutral-700 hover:border-neutral-400 transition-colors"
+                    >
                       Add to Cart
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

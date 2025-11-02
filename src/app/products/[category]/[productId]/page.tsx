@@ -112,12 +112,18 @@ const ProductPage: React.FC = () => {
 
               {/* Action Buttons */}
               <div className="flex gap-4">
-                <button className="flex-1 bg-[#87CEEB] text-neutral-900 font-semibold py-4 px-6 rounded-full hover:bg-[#79c9f0] transition-colors">
+                <a
+                  href="https://www.joinblvd.com/b/smilespawellness/widget#/visit-type"
+                  className="flex-1 bg-[#87CEEB] text-neutral-900 font-semibold py-4 px-6 rounded-full hover:bg-[#79c9f0] transition-colors text-center"
+                >
                   Add to Cart
-                </button>
-                <button className="px-6 py-4 border-2 border-neutral-300 rounded-full font-semibold text-neutral-700 hover:border-neutral-400 transition-colors">
+                </a>
+                <a
+                  href="https://www.joinblvd.com/b/smilespawellness/widget#/visit-type"
+                  className="px-6 py-4 border-2 border-neutral-300 rounded-full font-semibold text-neutral-700 hover:border-neutral-400 transition-colors text-center"
+                >
                   Subscribe & Save 20%
-                </button>
+                </a>
               </div>
 
               <div className="text-sm text-neutral-500">
